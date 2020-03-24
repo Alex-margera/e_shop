@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+		{% block products %}
+            {% include "shop_modules/shop_head.html"%}
+		<section class="ftco-section bg-light">
+    	<div class="container-fluid">
+    		<div class="row">
+    			{% include "shop_modules/product.html" %}
+                {% include "shop_modules/product_2.html" %}
+                {% include "shop_modules/product_3.html" %}
+                {% include "shop_modules/product_4.html" %}
+                {% include "shop_modules/product_5.html" %}
+                {% include "shop_modules/product_6.html" %}
+                {% include "shop_modules/product_7.html" %}
+                {% include "shop_modules/product_8.html" %}
+    		</div>
+    		{% include "shop_modules/Active.html" %}
+    	</div>
+        </section>
+        {% endblock products %}
+
+
+

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static tags %}
+
+{% block single_blog %}
+    {% include "single_blog_modules/blog_head.html" %}
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+    <div class="col-lg-8 ftco-animate">
+    {% include "single_blog_modules/blog_body.html" %}
+    {% include "single_blog_modules/about_author.html" %}
+    <div class="pt-5 mt-5">
+              <h3 class="mb-5">6 Comments</h3>
+    {% include "single_blog_modules/comment_list.html" %}
+    {% include "single_blog_modules/comment_warp.html" %}
+    </div>
+    {% include "single_blog_modules/recent_blog.html" %}
+    {% include "single_blog_modules/tag_cloud.html" %}
+    {% include "single_blog_modules/paragraph.html" %}
+    </div> <!-- .col-md-8 -->
+        </div>
+      </div>
+    </section>
+{% endblock single_blog %}
+
+
+
+
+
+          <!-- .section -->

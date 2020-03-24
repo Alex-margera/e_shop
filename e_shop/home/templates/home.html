@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static tags %}
+
+{% block home %}
+
+    {% include "home_modules/Stylist.html" %}
+    <div class="goto-here"></div>
+    {% include "home_modules/trending.html" %}
+    {% include "home_modules/fasion_shop.html" %}
+    {% include "home_modules/products.html" %}
+    {% include "home_modules/sales.html" %}
+    {% include "home_modules/testimony.html" %}
+    {% include "home_modules/blog.html" %}
+    {% include "home_modules/happy_customers.html" %}
+    {% include "home_modules/services.html" %}
+    {% include "home_modules/subscribe.html" %}
+
+
+{% endblock home %}

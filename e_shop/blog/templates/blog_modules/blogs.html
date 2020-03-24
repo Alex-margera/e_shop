@@ -1,0 +1,27 @@
+{% load static %}
+<section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+           {% include "blog_modules/blogs_modules/blogs_main.html" %}
+              {% include "blog_modules/blogs_modules/tagcloud.html" %}
+              {% include "blog_modules/blogs_modules/lancesmith.html" %}
+            <div class="pt-5 mt-5">
+              <h3 class="mb-5">6 Comments</h3>
+                {% include "blog_modules/blogs_modules/comment_list.html" %}
+              <!-- END comment-list -->
+                {% include "blog_modules/blogs_modules/leave_a_comment.html" %}
+            </div>
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            {% include "blog_modules/blogs_modules/sidebar_box.html" %}
+            <div class="sidebar-box ftco-animate">
+            {% include "blog_modules/blogs_modules/categories.html" %}
+            </div>
+            {% include "blog_modules/blogs_modules/recent_blog.html" %}
+              {% include "blog_modules/blogs_modules/tag_cloud.html" %}
+             {% include "blog_modules/blogs_modules/paragraph.html" %}
+          </div>
+        </div>
+      </div>
+    </section>
